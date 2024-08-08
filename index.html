@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Souls Image Filter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container column">
+      <h1 class="title">Filtro - Dark Souls</h1>
+
+      <section class="content column hidden" id="content">
+        <div class="display-image" id="img-box"></div>
+
+        <aside class="menu-filters"></aside>
+      </section>
+
+      <section class="actions row">
+        <a class="download btn btn-primary hidden" id="download">Descargar</a>
+
+        <div class="image-options">
+          <label for="img-btn" class="btn btn-primary">Subir Imagen</label>
+          <input type="file" class="input-image hidden" id="img-btn" />
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  </body>
+</html>

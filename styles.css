@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Uncial+Antiqua&display=swap");
+
+:root {
+  --primary: #f2613f;
+  --dark-primary: #9b3922;
+  --background-dark: #1c1c1c;
+  --text-red: #a62020;
+  --text-yellow: #e6c300;
+  --overlay-dark: rgba(0, 0, 0, 0.7);
+  --button-bg: #333333;
+  --button-text: #ffffff;
+
+  --main-font: "Cinzel", serif;
+
+  --mobile: 412px;
+  --tablet: 768px;
+  --desktop: 1440px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--button-text);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+p,
+a,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+}
+
+.row,
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.accent {
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--light-gray);
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--button-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-primary);
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img-box {
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+
+.canvas {
+  filter: grayscale(50%);
+}
+
+.filter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  background: var(--background-dark);
+  filter: blur(0.03rem);
+  color: var(--text-red);
+}
